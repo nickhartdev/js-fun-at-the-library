@@ -99,8 +99,7 @@ var belowTwoHundred = [37, 68, 1, 4, 53, 22, 89, 114, 180, 20, 34, 159];
 
 // belowTwoHundred[belowTwoHundred.length - 4];
 
-console.log((belowTwoHundred.indexOf(Math.max(belowTwoHundred))));
-
+belowTwoHundred[belowTwoHundred.length - 4];
 
 //------------------------- Objects -------------------------//
 
