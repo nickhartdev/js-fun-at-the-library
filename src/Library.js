@@ -18,14 +18,14 @@ function addBook(library, book) {
 }
 
 function checkoutBook(library, bookTitle) {
-  if (bookTitle.length < 19) {
+  if (library.shelves.fiction == false) {
     return `Sorry, there are currently no copies of ${bookTitle} available at the ${library.name}`
-  }
-  if (bookTitle === library.shelves.fiction[0].title) {
+  } else {
     library.shelves.fiction.splice(0, 1);
     return `You have now checked out ${bookTitle} from the ${library.name}`;
   }
 }
+
 
 
 module.exports = {
