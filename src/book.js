@@ -3,13 +3,12 @@ function createTitle(title) {
 }
 
 function buildMainCharacter(name, age, pronouns) {
-  var bookCharacter = {
-      name: name,
-      age: age,
-      pronouns: pronouns
-    }
-  return bookCharacter;
+  return {
+    name: name,
+    age: age,
+    pronouns: pronouns
   }
+}
 
 function saveReview(review, arr) {
   arr.push(review);
@@ -17,7 +16,7 @@ function saveReview(review, arr) {
     if (review == arr[0]) {
       arr.pop();
     }
-  }         
+  }
   return arr;
 }
 
@@ -30,13 +29,12 @@ function calculatePageCount(bookTitle) {
 }
 
 function writeBook(title, character, pageCount, genre) {
-  var book = {
+  return {
     title: title,
     bookCharacter: character,
     pageCount: pageCount,
     genre: genre
   }
-  return book;
 }
 
 function editBook(book) {

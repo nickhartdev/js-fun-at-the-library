@@ -26,8 +26,6 @@ function checkoutBook(library, bookTitle) {
   }
 }
 
-
-
 module.exports = {
   createLibrary: createLibrary,
   addBook: addBook,

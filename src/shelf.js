@@ -20,8 +20,7 @@ function listTitles(shelf) {
   for (i = 0; i < shelf.length; i++) {
     titles.push(shelf[i].title);
   }
-  var titleString = titles.join(', ');
-  return titleString;
+  return titles.join(', ');
 }
 
 function searchShelf(shelf, bookTitle) {
@@ -32,7 +31,6 @@ function searchShelf(shelf, bookTitle) {
   }
   return false;
 }
-
 
 module.exports = {
   shelfBook: shelfBook,
